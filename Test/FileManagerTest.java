@@ -14,10 +14,10 @@ class FileManagerTest {
     Path inputFilePath = Paths.get("medlemmar");
     String outputFilePath = "träningspassTest";
     @Test
-    void readPeopleFromFileTest() {
-        List<Customer> people = FileManager.readCustomersFromFile(inputFilePath);
-        assertEquals(14, people.size());
-        assertNotEquals(12, people.size());
+    void readCustomersFromFileTest() {
+        List<Customer> customers = FileManager.readCustomersFromFile(inputFilePath);
+        assertEquals(14, customers.size());
+        assertNotEquals(12, customers.size());
 
     }
 

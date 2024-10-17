@@ -29,10 +29,16 @@ public class FileManager {
 
         } catch (FileNotFoundException e) {
             System.out.println("Filen kunde inte hittas");
+            e.printStackTrace();
+            System.exit(0);
         } catch (IOException e) {
             System.out.println("Det gick inte att läsa från filen");
+            e.printStackTrace();
+            System.exit(0);
         } catch (Exception e) {
             System.out.println("Något gick fel");
+            e.printStackTrace();
+            System.exit(0);
         }
         return customers;
 
